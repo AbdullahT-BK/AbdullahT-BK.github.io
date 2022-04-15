@@ -9,23 +9,24 @@ var reset =document.querySelector(".reset");
 var guess =Number(document.querySelector(".guess").value);
 console.log(guess);
 var msg1 = document.querySelector(".msg");
+var message2= document.querySelector(".msg2")
+var message3= document.querySelector(".msg3")
+var message4= document.querySelector(".msg4")
 
 check.addEventListener ('click', function(){
-
     if (guess < 1 || guess > 100){
         alert("Please enter a number between 1 and 100.");
         msg1.textContent = "Your number is out of range";
     }
-    // else{
-    //     guessed_nums.push(guess);
-    //     no_of_guesses+= 1;
+    else{
+      guessed_nums.push(guess);
+      no_of_guesses+= 1;
 
-    //     if(guess.value < answer){
-    //         msg1.textContent = "Your guess is too low.";
-    //         msg2.textContent = "No. of guesses: " + no_of_guesses;
-    //         msg3.textContent = "Guessed numbers are: " +
-    //         guessed_nums;
-    //     }
+    elif (guess < answer) 
+    message2.textContent = "Your guess is too low.";
+    msg2.textContent = "No. of guesses: " + no_of_guesses;
+    msg3.textContent = "Numbers Guessed are: " + guessed_nums;
+     
     //     else if(guess.value > answer){
     //         msg1.textContent = "Your guess is too high.";
     //         msg2.textContent = "No. of guesses: " + no_of_guesses;
@@ -40,5 +41,4 @@ check.addEventListener ('click', function(){
     //         highscore = score;
     //     }
     }
-
-)
+} )
