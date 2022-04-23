@@ -5,29 +5,41 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="project3.css">
-  <title>Project 3</title>
+  <title>Document</title>
 </head>
-
   <body>
     <h1 class="title">GUESS MY NUMBER</h1>
+    <h4 class="subtitle">Guess the number between 1 and 100</h4>
     
-<div class="container">
-    <h4>Guess the number between 1 and 100</h4>
-    <br>
-    <input type = "text" placeholder="Enter a number" id="guess">
-    <br>
-    <button class="btn"> Check Your Result!</button>
-    <button class="btn">Reset</button>
-    <p id="text1"> Result shows here..</p>
-    <p id="text2"> No. of Guesses </p>
-    <p id="text3"> Numbers Guessed are:</p>
-</div>
 
-<div class="HighScores">
-<h5 class="score-label">Score:<span class="score"> 0</span></h5>
-<h5 class="score-label">High Score:<span class="high-score"> 0</span></h5>
-</div>
-
-    <script src="project3.js"> </script>
+    <div class="container">
+      <div class="score">
+        <p style="text-align:center;font-size:20px;text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;"><b>Score :<span>10</span> </b></p> 
+        <p style="text-align:center;font-size:20px;text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;"><b>High Score : 0</b> </p>
+      </div>
+      <button  type="button" class="reset">
+       <p style="text-align:center;font-size:30px;text-shadow: -1px 0 white, 0 1px black, 1px 0 black, 0 -1px black;"><b>Reset</b></p>
+      </button>
+      <div class="Guess">
+        <img class= "pic" src="questionmark.png" alt="" style="width:40%; height: 200px; margin: auto;border-radius:10px; margin-top: 50px; ">
+        <br>
+        <input  class= "input" type = "text" placeholder="Enter a number">
+      <br>  
+       
+      
+      <button class="btn1" > Check </button>
+      <h2 class="msg"> Guess A Number!</h2>
+      </div>
+      <br>
+      <div class="history">
+        No. of guesses
+      </div>
+      <div class="number">
+        Guessed numbers are:  
+      </div>
+    </div>
+    
+    <script src="project3.js"></script>
+    
   </body>
 </html>
