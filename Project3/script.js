@@ -1,44 +1,53 @@
-var answer = Math.floor(Math.random()*100) + 1;
+var answer = Math.floor(Math.random() * 100) + 1;
 console.log(answer);
 var no_of_guesses = 0;
 var guessed_nums = [];
 
-var check = document.querySelector(".btn");
+var check = document.querySelector(".btn1");
 console.log(check);
 var reset =document.querySelector(".reset");
-var guess =Number(document.querySelector(".guess").value);
+var guess =Number(document.querySelector(".input").value);
 console.log(guess);
-var msg1 = document.querySelector(".msg");
-var message2= document.querySelector(".msg2")
-var message3= document.querySelector(".msg3")
-var message4= document.querySelector(".msg4")
+var msg = document.querySelector(".msg");
+var history = document.querySelector(".history");
+var number = document.querySelector(".number");
+var score = 10
 
-check.addEventListener ('click', function(){
+
+reset.addEventListener('click', function(){
+    document.querySelector("body").style.backgroundColor= "#6B705C";
+    msg.textContent = "Play again?";
+}) 
+check.addEventListener ('click', function(){ 
+    let guess =Number(document.querySelector(".input").value);                             
     if (guess < 1 || guess > 100){
         alert("Please enter a number between 1 and 100.");
-        msg1.textContent = "Your number is out of range";
     }
-    else{
-      guessed_nums.push(guess);
-      no_of_guesses+= 1;
-
-    elif (guess < answer) 
-    message2.textContent = "Your guess is too low.";
-    msg2.textContent = "No. of guesses: " + no_of_guesses;
-    msg3.textContent = "Numbers Guessed are: " + guessed_nums;
-     
-    //     else if(guess.value > answer){
-    //         msg1.textContent = "Your guess is too high.";
-    //         msg2.textContent = "No. of guesses: " + no_of_guesses;
-    //         msg3.textContent = "Guessed numbers are: " +
-    //         guessed_nums;
-    //     }
-    //     else if(guess.value == answer){
-    //         msg1.textContent = "Congrats You Win!!";
-    //         msg2.textContent = "The number was: " + answer;
-    //         document.getElementById("my_btn").disabled = true;
-    //     if (score > highscore) {
-    //         highscore = score;
-    //     }
+     else if (guess < answer) {
+         guessed_nums.push(guess);        no_of_guesses+= 1;  
+             msg.textContent = "Your guess is too low.";
+             document.querySelector(".history").innerHTML =" No. of guesses: " + no_of_guesses;
+             document.querySelector(".number").innerHTML = "Guessed numbers are: " +
+             guessed_nums;
+             score --;
+             document.querySelector("span").textContent = String(score);
+     }
+         else if(guess > answer) {
+            guessed_nums.push(guess);        no_of_guesses+= 1; 
+             msg.textContent = "Your guess is too high.";
+             document.querySelector(".history").innerHTML =" No. of guesses: " + no_of_guesses;
+             document.querySelector(".number").innerHTML = "Guessed numbers are: " +
+             guessed_nums;
+         }
+        else if(guess === answer) {
+            guessed_nums.push(guess);        no_of_guesses+= 1; 
+             msg.textContent = "Congrats You Win!!" + "The number was: " + answer;
+             document.querySelector("body").style.backgroundColor= "orange"
+             document.querySelector(".reset").disabled = true;
+            //document.querySelector(".score").innerHTML = "Score : " + no_of_guesses;//
+       if (score > highscore) {
+             highscore = score;
+         }
+         
     }
-} )
+})
