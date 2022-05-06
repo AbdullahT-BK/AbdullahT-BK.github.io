@@ -171,7 +171,7 @@ body {
     color: black;
 }
 
-.modalWindow {
+.modalwindow {
     height: 60%;
     width: 40%;
     top: 5%;
@@ -182,7 +182,7 @@ body {
     pointer-events: none;
 }
 
-.modalWindow:target {
+.modalwindow:target {
     opacity: 1;
     pointer-events: all;
 }
