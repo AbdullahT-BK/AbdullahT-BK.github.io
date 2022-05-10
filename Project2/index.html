@@ -1,234 +1,216 @@
- <!DOCTYPE html>
+  <!DOCTYPE html>
  <html lang="en" dir="ltr">
+ <html>
 
  <head>
      <meta charset="utf-8">
-     <link rel="stylesheet" href="style.css">
-     <title>Project2</title>
+     <title>Project 2</title>
+     <link href="style.css" rel="stylesheet">
  </head>
 
  <body>
-         <!-- Header animation block -->
-         <div class="headerbox">
-             <div class="leftbox">
-                 <img src="images/logo.png" alt="Logo" height=100% width=100% </div>
+     <!-- header animation block-->
+     <div class="headerbox">
+         <div class="imgframe">
+             <img src="images/logo.png" alt="Logo" width="110%">
+         </div>
+     </div>
+
+     <div class="headertextbox">
+         <div class="bigflyingtext">
+             <h1> <i>Joesfina Body Care Collection <i> </h1>
+         </div>
+     </div>
+
+     <!-- slide show block-->
+     <div class="Promo">
+         <div class="sliding-text">
+             <div class="slide s1" <p> Today only! <span> $5.99 INTO THE NIGHT BODYCARE <span> <i> Code:STARRYNIGHT <i /> </p>
              </div>
-             <div class="rightbox">
-                 <div class="bigflyingtext">
-                     <h1> <i>Joesfina Body Care Collection <i> </h1>
-                 </div>
-                 <div class="smallflyingtext">
-                     <h3> Discover the exotic sensation of all seasons</h3>
-                 </div>
+             <div class="slide s2"> FREE Shipping and Handling <b> on orders over $50 </b> <i>Code:FREEFREE</i> </p>
+             </div>
+         </div>
+     </div>
 
-                 <!-- Slide Promo -->
-                 <div class="Promo">
-                     <div class="Promotiongroup">
-                         <div class="slide1"> <p> Today only! <span> $5.99 INTO THE NIGHT BODYCARE <span> <i> Code:STARRYNIGHT <i /> </p> </div>
-                         <p> <div class="slide2"> FREE Shipping and Handling <b> on orders over $50 </b> <i>Code:FREEFREE</i> </p> </div>
-                         <div class="slide3"> $ 25 off Orders above $150 </div>
+     <!-- hero block-->
+     <div class="heroblock">
+         <img src="images/intro_img2.jpg" alt="Flower Background" title="The Ritual of Ayurveda" width=820px height=400px>
+         <div class="herotextblock">
+             <p>A 100% natural, unique dry oil that nourishes the skin. Enriched with nourishing herbs, specifically put together according to the Ayurvedic tradition for the Vata Dosha. With nourishing sweet almond oil and basil.</p>
+         </div>
+     </div>
+
+     <!-- product row block-->
+     <div class="productbox">
+         <h4> Josefina Body Lotion</h4>
+         <hr>
+         <div class="row">
+             <div class="product">
+                 <img src="images/item1.png" alt="item1">
+                 <h5>THE RITUAL OF SAKURA</h5>
+                 <h3>Cherry Blossom Hand Lotion</h3>
+                 <p>Body lotion, 70ml</p>
+                 <p>$12.50</p>
+                 <a title="add to cart" class="btn" href="#item1">ADD TO BAG</a>
+             </div>
+
+             <div class="product">
+                 <img src="images/item2.png" alt="Himalaya Honey">
+                 <h5>THE RITUAL OF AYURVEDA</h5>
+                 <h3>Himalaya Honey Body Cream</h3>
+                 <p>Body cream, 70ml</p>
+                 <p>$7.50</p>
+                 <a title="add to cart" class="btn" href="#item2">ADD TO BAG</a>
+             </div>
+
+             <div class="product">
+                 <img src="images/item3.png" alt="Rice Milk">
+                 <h5>THE RITUAL OF SAKURA</h5>
+                 <h3>Organic Rice Milk Body Cream</h3>
+                 <p>Body cream, 70ml</p>
+                 <p>$7.50</p>
+                 <a title="add to cart" class="btn" href="#item3">ADD TO BAG</a>
+             </div>
+         </div>
+
+         <!--Modal window part -->
+         <div class="mymodalwindow" id="item1">
+             <div class="messagebox">
+                 <a href="#" id="exit">X</a>
+                 <p>IT'S IN THE BAG!</p>
+                 <hr>
+
+                 <div class="productrow">
+                     <div class="product-2by1">
+                         <img src="images/item1.png" alt="item1">
+                     </div>
+                     <div class="product-2by1">
+                         <p>THE RITUAL OF SAKURA</p>
+                         <h4>Cherry Blosson Hand Lotion</h4>
+                         <span>Body lotion, 70 ml</span>
+                         <p>$12.50</p>
+                         <span>Mix & Match: 3/$33</span>
                      </div>
                  </div>
 
-                 <!--- HERO BLOCK --->
-                 <div class="flowerblock">
-                     <img src="images/intro_img2.jpg" alt="Flower Background" title="The Ritual of Ayurveda" width=600px height=600px>
-                     <div class="flowertextblock">
-                         <p>A 100% natural, unique dry oil that nourishes the skin. Enriched with nourishing herbs, specifically put together according to the Ayurvedic tradition for the Vata Dosha. With nourishing sweet almond oil and basil.</p>
+                 <div class="greybox">
+                     <p>Nurture and comfort skin from top to toe with The Ritual of Sakura Body Cream from Rituals.</p>
+                     <hr>
+                     <a href="#item1">CONTINUE SHOPPING</a>
+                 </div>
+
+             </div>
+         </div>
+
+         <div class="mymodalwindow" id="item2">
+             <div class="messagebox">
+                 <a href="#" id="exit">X</a>
+                 <p>IT'S IN THE BAG!</p>
+                 <hr>
+                 <div class="productrow">
+                     <div class="product-2by1">
+                         <img src="images/item2.png" alt="item2">
+                     </div>
+                     <div class="product-2by1">
+                         <p>THE RITUAL OF AYURVEDA</p>
+                         <h4>Himalaya Honey body cream</h4>
+                         <span>Body cream, 70 ml</span>
+                         <p>$7.50</p>
+                         <span>Mix & Match: 3/$20</span>
                      </div>
                  </div>
 
-                 <!-- Products -->
-                 <div class="single-products">
-                     <h3>Josefina Body Lotion</h3>
+                 <div class="greybox">
+                     <p>Harmonise body, mind & soul with this luxurious body cream from the Ritual of Ayuveda.</p>
+                     <hr>
+                     <a href="#item2">CONTINUE SHOPPING</a>
 
-                     <div class="row">
-                         <div class="productBox">
-                             <img src="images/item1.png" alt="Cherry Blossom">
-                             <h5>THE RITUAL OF SAKURA</h5>
-                             <h3>Cherry Blossom Hand Lotion</h3>
-                             <p>Body lotion, 70ml</p>
-                             <p>$12.50</p>
-                             <a title="add to cart" class="btn" href="#item1">ADD TO BAG</a>
-                         </div>
+                 </div>
+             </div>
+         </div>
 
-                         <div class="productBox">
-                             <img src="images/item2.png" alt="Himalaya Honey">
-                             <h5>THE RITUAL OF AYURVEDA</h5>
-                             <h3>Himalaya Honey Body Cream</h3>
-                             <p>Body cream, 70ml</p>
-                             <p>$7.50</p>
-                             <a title="add to cart" class="btn"  href="#item2">ADD TO BAG</a>
-                         </div>
-
-                         <div class="productBox">
-                             <img src="images/item3.png" alt="Rice Milk">
-                             <h5>THE RITUAL OF SAKURA</h5>
-                             <h3>Organic Rice Milk Body Cream</h3>
-                             <p>Body cream, 70ml</p>
-                             <p>$7.50</p>
-                             <a title="add to cart" class="btn"  href="#item3">ADD TO BAG</a>
-                         </div>
-
-                         <!-- Modal Window-->
-                         <div class="mymodalwindow" id="item1">
-                             <div class="productText">
-                                 <a class="exit" href="#exit">X</a>
-                                 <p>IT'S IN THE BAG!</p>
-                                 <hr>
-
-                                 <div class="productrow">
-                                     <img src="Project2/images/item1.png" alt="">
-                                     <p>THE RITUAL OF SAKURA</p>
-                                     <h2>Cherry Blossom Hand Lotion</h2>
-                                     <p>Body lotion, 70ml</p>
-                                     <p> $12.50 </p>
-                                     <p>Mix & Match 3/$33</p>
-                                 </div>
-                             </div>
-                             <div class="greybox">
-                                 <p>Nurture and confort skin from top to toe with The Ritual of Sakura Body Cream from Rituals.</p>
-                                 <hr>
-                                 <a href="#item1">CONTINUE SHOPPING</a>
-                             </div>
-                         </div>
-
-                         <div class="mymodalwindow" id="item2">
-                             <div class="productText">
-                                 <a class="exit" href="#exit">X</a>
-                                 <p>IT'S IN THE BAG!</p>
-                                 <hr>
-
-                                 <div class="productrow">
-                                     <img src="images/item2.png" alt="Himalaya Honey">
-                                     <h5>THE RITUAL OF AYURVEDA</h5>
-                                     <h3>Himalaya Honey Body Cream</h3>
-                                     <p>Body cream, 70ml</p>
-                                     <p>$7.50</p>
-                                     <p>Mix & Match 3/$20</p>
-                                 </div>
-                                 <div class="greybox">
-                                     <p>Nurture and confort skin from top to toe with The Ritual of Sakura Body Cream from Rituals.</p>
-                                     <hr>
-                                     <a href="#item2">CONTINUE SHOPPING</a>
-                                 </div>
-                             </div>
-
-                             <div class="mymodalwindow" id="item3">
-                                 <div class="productBlock">
-                                     <a class="exit" href="#exit">x</a>
-
-                                     <div class="productText">
-                                         <p>IT'S IN THE BAG!</p>
-                                         <hr class="hr2">
-
-                                         <div class="productrow">
-                                             <img src="images/item2.png" alt="">
-                                             <p>THE RITUAL OF SAKURA</p>
-                                             <h2>Himalaya Honey Body Cream</h2>
-                                             <p>Body cream, 70ml</p>
-                                             <p> $7.50</p>
-                                             <p>Mix & Match 3/$20</p>
-                                         </div>
-                                     </div>
-                                     <div class="greybox">
-                                         <p>Nurture and confort skin from top to toe with The Ritual of Sakura Body Cream from Rituals.</p>
-                                         <hr>
-                                         <a href="#item3">CONTINUE SHOPPING</a>
-                                     </div>
-                                 </div>
-                             </div>
-
-                             <!--Gift section-->
-                             <div class="productBox">
-                                 <img src="images/item3.png" alt="Rice Milk">
-                                 <h5>THE RITUAL OF SAKURA</h5>
-                                 <h3>Organic Rice Milk Body Cream</h3>
-                                 <p>Body cream, 70ml</p>
-                                 <p>$7.50</p>
-
-                                 <!-- <div class="modalZone">
-                                <a class="buttonMain" href="#modal3">ADD TO BAG</a>
-                            </div> -->
-
-                                 <div id="modal3" class="modalWindow">
-
-                                     <div class="productBlock">
-                                         <a class="exit" href="#exit">x</a>
-
-                                         <div class="productText">
-                                             <p>IT'S IN THE BAG!</p>
-                                             <hr class="hr2">
-
-                                             <div class="productrow">
-                                                 <img src="images/item3.png" alt="">
-                                                 <p>THE RITUAL OF SAKURA</p>
-                                                 <h2>Organic Rice Milk Body Cream</h2>
-                                                 <p>Body cream, 70ml</p>
-                                                 <p>$7.50</p><br>
-                                                 <p>Mix & Match 3/$20</p>
-                                             </div>
-                                         </div>
-
-                                         <div class="greybox">
-                                             <p>Nurture and confort skin from top to toe with The Ritual of Sakura Body Cream from Rituals.</p>
-                                             <hr>
-                                             <a href="#item3">CONTINUE SHOPPING</a>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-
-                         <!-- Footer begins -->
-                         <div class="footerStage">
-                             <div class="footerRow">
-                                 <div class="footer">
-                                     <h4>HELP</h4>
-                                     <a href="#"> Customer Service </a> <br>
-                                     <a href="#"> Live Chat </a>
-                                 </div>
-
-                                 <div class="footer">
-                                     <p>ACCOUNT</p>
-                                     <a href="#"> Your Account </a> <br>
-                                     <a href="#"> Order Status </a>
-                                     </p>
-                                 </div>
-
-                                 <div class="footer">
-                                     <p>SUBSCRIBE</p>
-                                     <a href="#"> Emails </a> <br>
-                                     <a href="#"> Store Orders and Events </a>
-                                 </div>
-
-                                 <div class="footer">
-                                     <p>THE MEMBER CARD</p>
-                                     <a href="#"> Learn More </a> <br>
-                                     <a href="#"> Pay my Bill </a>
-                                 </div>
-                             </div>
-
-                             <div class="social-header">
-                                 <p>CONNECT WITH JOSEFINA BODY CARE COLLECTION</p>
-                             </div>
-
-                             <div class="social">
-                                 <div class="social-section">
-                                     <a href="https://facebook.com"><img class="logo" src="images/icons/facebook.png" alt="Facebook"></a>
-                                     <a href="https://instagram.com"><img class="logo" src="images/icons/instagram.png" alt="Instagram"></a>
-                                     <a href="https://youtube.com"><img class="logo" src="images/icons/youtube.png" alt="YouTube"></a>
-                                     <a href="https://pinterest.com"><img class="logo" src="images/icons/pin.png" alt="Pinterest"></a>
-                                     <a href="https://twitter.com"><img class="logo" src="images/icons/twitter.png" alt="Twitter"></a>
-                                 </div>
-
-                                 <div class="bottomText">
-                                     ©Josephina Body Care Collection by <b>Abdullah Tariq</b> All Rights Reserved <br>
-                                     NOTE: This webpage is a template to create a sales website. All information and materials used are ONLY for educational purposes. <br>
-                                 </div>
-                             </div>
-                         </div>
+         <div class="mymodalwindow" id="item3">
+             <div class="messagebox">
+                 <a href="#" id="exit">X</a>
+                 <p>IT'S IN THE BAG!</p>
+                 <hr>
+                 <div class="productrow">
+                     <div class="product-2by1">
+                         <img src="images/item3.png" alt="item3">
                      </div>
+                     <div class="product-2by1">
+                         <p>THE RITUAL OF SAKURA</p>
+                         <h4>Oraganic rice milk body cream</h4>
+                         <span>Body cream, 70 ml</span>
+                         <p>$7.50</p>
+                         <span>Mix & Match: 3/$20</span>
+                     </div>
+                 </div>
+
+                 <div class="greybox">
+                     <p>Feathuring special technology that makes this velvety rich cream easy to apply, it intensely nourshes and firms the skin.</p>
+                     <hr>
+                     <a href="#item3">CONTINUE SHOPPING</a>
+                 </div>
+             </div>
+         </div>
+
+         <!--Gift section-->
+
+
+         <!-- footer row block-->
+         <div class="footerstage">
+             <div class="footerRow">
+                 <div class="footer">
+                     <h4>HELP</h4>
+                     <a href="#"> Customer Service </a>
+                     <br>
+                     <a href="#"> Live Chat </a>
+                 </div>
+
+                 <div class="footer">
+                     <p>ACCOUNT</p>
+                     <a href="#"> Your Account </a>
+                     <br>
+                     <a href="#"> Order Status </a>
+                     </p>
+                 </div>
+
+                 <div class="footer">
+                     <p>SUBSCRIBE</p>
+                     <a href="#"> Emails </a>
+                     <br>
+                     <a href="#"> Store Orders and Events </a>
+                 </div>
+
+                 <div class="footer">
+                     <p>THE MEMBER CARD</p>
+                     <a href="#"> Learn More </a>
+                     <br>
+                     <a href="#"> Pay my Bill </a>
+                 </div>
+             </div>
+
+             <div class="social-header">
+                 <p>CONNECT WITH JOSEFINA BODY CARE COLLECTION</p>
+             </div>
+
+             <div class="social">
+                 <div class="social-section">
+                     <a href="https://facebook.com"><img class="logo" src="images/icons/facebook.png" alt="Facebook"></a>
+                     <a href="https://instagram.com"><img class="logo" src="images/icons/instagram.png" alt="Instagram"></a>
+                     <a href="https://youtube.com"><img class="logo" src="images/icons/youtube.png" alt="YouTube"></a>
+                     <a href="https://pinterest.com"><img class="logo" src="images/icons/pin.png" alt="Pinterest"></a>
+                     <a href="https://twitter.com"><img class="logo" src="images/icons/twitter.png" alt="Twitter"></a>
+                 </div>
+
+                 <div class="bottomText">
+                     ©Josephina Body Care Collection by <b>Abdullah Tariq</b> All Rights Reserved <br>
+                     NOTE: This webpage is a template to create a sales website. All information and materials used are ONLY for educational purposes. <br>
+                 </div>
+             </div>
+         </div>
+     </div>
  </body>
 
  </html>
