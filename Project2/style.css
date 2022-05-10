@@ -1,269 +1,250 @@
 body {
-    background-color: #FAEBD7
+    background-color: #FAEBD7;
 }
 
-.headerBox {
-    height: 100px;
-    padding-left: 20%;
-    margin-bottom: 4%;
+/*header block*/
+.headerbox{
+    width: 100%;
+    height: 10%;
+    background-color: antiquewhite;
+    position: relative;
+    margin: auto;
 }
 
-.leftbox {
+.imgframe{
     border: 2px solid olive;
-    border-radius: 30px;
-    height: 50%;
-    width: 15%;
-    float: left;
-    animation: enlargeLogo 3.0s;
-    animation-iteration-count: infinite;
-}
-
-.headerbox {
-    height: 100%;
-    width: 75%;
-}
-
-.bigflyingtext {
-    margin-left: 15%;
-    color: olive;
-    font-family: cursive;
-    animation: moveTitle: 1.0s;
-    animation-iteration-count: infinite;
-}
-
-.smallflyingtext {
-    animation: moveSubtitle: .50s;
-    animation-iteration-count: infinite;
-}
-
-.Promo {
-    height: 55px;
-    width: 97.7%;
-    margin: -5% 2% 0% 1.2%;
-    overflow: hidden;
-}
-
-.Promotiongroup {
-    height: 100%;
-    width: 300%;
-    animation: slideshow 10s;
-    animation-iteration-count: infinite;
-}
-
-.Promo {
-    text-align: center;
-    float: left;
-    height: 100%;
-    padding-top: 4px;
-}
-
-@keyframes enlargeLogo {
-    from {
-        transform: scale(0)
-    }
-
-    to {
-        transform: scale(1)
-    }
-}
-
-@keyframes logoAnimate {
-    0% {
-        width: 110px;
-    }
-
-    50% {
-        width: 100px;
-    }
-
-    100% {
-        width: 110px;
-    }
-}
-
-@keyframes slideshow {
-    0% {
-        margin-left: 0%
-    }
-
-    50% {
-        margin-left: -100%
-    }
-}
-
-.flowerBlock {
-    width: 97.7%;
-    position: relative;
-    margin: 0% 2% 4% 1.2%;
-    margin-bottom: 40px;
-}
-
-.flowerTextBlock {
-    border: 4px solid white;
+    border-radius: 20%;
     position: absolute;
-    padding: 10px 20px 35px 25px;
+    width: 20%;
+    height: 20%;
+    top: 0;
+    animation-name: movelogo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
-.flowerBlock {
-    height: 350px;
-    width: 36%;
-    float: left;
-    margin-left: 9%;
+.imgframe > img{
+    width: 100px;
+    height: 100px;
 }
 
-.block1 {
-    height: 350px;
-    width: 100%;
+.bigflyingtext{
+    color: #C4A484;
+    position: absolute;
+    top: 0;
+    animation: movebigtext 5s infinite;
 }
 
-.block1>img {
-    height: 350px;
-    width: 100%;
-    opacity: 0.8;
+@keyframes movebigtext{
+    0% {left: 10%; top: 0%;}
 }
 
-.block2 {
-    background-image: linear-gradient(to top right, #c9c0bb, #FAEDE6, #DDEEBC);
-    color: olive;
-    height: 300px;
-    width: 80%;
-    padding: 25px;
-    position: relative;
-    float: left;
+@keyframes movelogo{
+    0% {width: 10%; height: 10%; }
 }
 
-.ingredients2 {
-    padding-right: 5%;
+.headertextbox{
+    padding-left: 15%;
 }
 
-.single-products {
-    color: #454d32;
-    margin-left: 5%;
-    margin-top: 36%;
-}
-
-.productrow {
-    height: 500px;
-    margin: 3% 4% 5% 5%;
+/*slide show block*/
+.Promo{
+    width: 90%;
+    height: 50px;
+    background-color: antiquewhite;
+    overflow: hidden;
+    margin: auto;
     text-align: center;
 }
 
-.productbox {
+.sliding-text{
+   width:200%;
+   height: 100%;
+   animation: slideshow 10s infinite;
+}
+
+.slide{
+    width: 50%;
     height: 100%;
-    width: 30%;
     float: left;
+    background-color: coral;
+    padding-top: 1px;
+    font-size: 15px;
 }
 
+.s1{ background-color:lightgreen;}
+.s2{ background-color: olive;}
 
-
-.buttonMain {
-    background-color: black;
-    color: white;
-    font-size: 12px;
-    padding: 20px ;
-    text-decoration: none;
-    display: inline-block;
+@keyframes slideshow{
+    0% {margin-left: 0%}
+    50% {margin-left: -100%}
+}
+/*hero block*/
+.heroblock{
+    height: 72%;
+    width: 90%;
+    background-repeat: no-repeat;
+    padding-top: 30px;
     position: relative;
+    margin: auto;
 }
 
-.buttonMain:hover {
-    background-color: lightgray;
-    color: black;
-}
-
-.modalwindow {
-    height: 60%;
+.herotextblock{
     width: 40%;
-    top: 5%;
-    left: 20%;
-    right: 60%;
-    opacity: 0;
+    height: 40%;
+    background-color: lightgray;
+    position: absolute;
+    top: 28%;
+    left: 6%;
+    border: 10px solid white;
+    border-radius: 10px;
+}
+
+.herotextblock > p{
+    text-align: center;
+    padding: 6px;
+}
+
+/*product row block*/
+.productbox{
+    height: 72%;
+    width: 90%;
+    padding-top: 1;
+    background-color: antiquewhite;
+    margin: auto;
+}
+
+.row{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.product{
+    flex: auto;
+    width: 33.3333%;
+    text-align: center;
+    font-size: 15;
+    padding-bottom: 20px;
+}
+
+.product > img{
+    width: 50%;
+    height: 45%;
+}
+
+.btn{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    border: 2px solid grey;
+    font-size: 10;
+}
+
+.mymodalwindow{
+    background-color: rgba(81, 102, 86, 0.5);
     position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
     pointer-events: none;
 }
 
-.modalwindow:target {
+.messagebox{
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    margin-top: 30%;
+    height: 330px;
+    text-align: center;
+    font-size: 12px;
+    position: relative;
+}
+
+#exit{
+    position: absolute;
+    right: 2%;
+    top: 0;
+    text-decoration: none;
+}
+
+#exit:hover{
+    background-color: black;
+    color: white;
+    width: 5%;
+}
+
+.mymodalwindow:target{
     opacity: 1;
     pointer-events: all;
 }
 
-.productBlock {
-    background-color: white;
-    top: -0.8%;
-    left: -0.8%;
-    height: 100%;
-    width: 100%;
-    position: absolute;
+.productrow{
+    height: 55%;
+    /*border: 1px solid red;*/
+    /*background-color: aquamarine;*/
 }
 
-.exit {
-    background-color: lightgray;
-    text-decoration: none;
-    padding: 0.5% 1% 0.5% 1.5%;
-    height: 5%;
-    width: 5%;
-    color: black;
-    float: right;
-}
-.productrow {
-    padding-left: 5%;
-    float: left;
-    margin-top: -10%;
-    text-align: left;
-    font-size: 14px;
-}
-
-.greybox {
-    background-color: lightgray;
-    height: 20%;
-    margin-top: 70%;
-    text-align: left;
-    font-size: 12px;
-}
-
-.exitMain {
-    background-color: white;
-    color: black;
-    font-size: 12px;
-    padding: 10px 10px;
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
-    transition-duration: 0.4s;
-}
-
-
-.productbox {
-    height: 100%;
-    width: 35%;
-    float: left;
-}
-
-.productbox>img {
+.product-2by1{
+    width: 48%;
     height: 80%;
-    width: 80%;
-}
-
-.footerStage {
-    height: 350px;
-    width: 100%;
-    background: #181818;
-    margin: -7% 0% 0% 1%;
-    color: white;
-    position: absolute;
-}
-
-.footer {
-    width: 99.7%;
-    margin-left: 1.3%;
-}
-
-.footer {
-    height: 100%;
-    width: 24%;
-    margin-top: 2%;
     float: left;
+}
+
+.product-2by1 > img{
+    width: 70%;
+    height: 90%;
+    padding: 10%;
+}
+
+.greybox{
+    background-color: darkgrey;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.greybox > p{
+    text-align:left;
+}
+
+.greybox > a{
+    text-decoration: none;
+    background-color: white;
+    font-size: 12px;
+    padding: 1%;
+}
+
+.greybox > a:hover{
+    background-color: black;
+    color: white;
+}
+
+/*footer block*/
+
+.footerstage{
+    background-color: black;
+    width: 100%;
+    margin: auto;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer {
     text-align: center;
+    height: 20%;
+    width: 25%;
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
 }
 
 .social-header {
@@ -286,12 +267,7 @@ body {
     position: relative;
 }
 
-.bottomText {
-    font-size: 12px;
-    color:black;
-    margin-top: 20%;
-    margin-left: -100%;
+.bottomText{
+    padding-top: 100px;
     text-align: center;
-    position: relative;
 }
-
