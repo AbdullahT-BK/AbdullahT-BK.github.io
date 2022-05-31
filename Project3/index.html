@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="project3.css">
+  <title>Guessing Game</title>
 </head>
   <body>
     <h1 class="title">GUESS MY NUMBER</h1>
@@ -13,33 +10,43 @@
     
 
     <div class="container">
-      <div class="score">
-        <p style="text-align:center;font-size:20px;text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;"><b>Score :<span>10</span> </b></p> 
-        <p style="text-align:center;font-size:20px;text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;"><b>High Score : 0</b> </p>
+      <div class="score-block">
+        <div class="score">Score: 10</div>
+        <div class="high-score">High Score: -</div>
       </div>
-      <button  type="button" class="reset">
-       <p style="text-align:center;font-size:30px;text-shadow: -1px 0 white, 0 1px black, 1px 0 black, 0 -1px black;"><b>Reset</b></p>
-      </button>
-      <div class="Guess">
-        <img class= "pic" src="questionmark.png" alt="" style="width:40%; height: 200px; margin: auto;border-radius:10px; margin-top: 50px; ">
+      <button class="reset">Reset</button> 
+      </div>
+    
+      <div class="main">
+        <img src= "brock1.jpg" alt= "pic1" class="image" style="width:40%; height: 200px; margin: auto;border-radius:10px; margin-top: 50px; ">
         <br>
         <input  class= "input" type = "text" placeholder="Enter a number">
+        <button class="check"> Check </button>
+        <h2 class="msg"> Guess A Number!</h2>
       <br>  
-       
-      
-      <button class="btn1" > Check </button>
-      <h2 class="msg"> Guess A Number!</h2>
-      </div>
-      <br>
+
+      <div class="win-section">
+        <div class="win-title">Congratulations!</div>
+        <div class="win-text">Your guess was correct. <span class="secret-num">-</span> is my secret number</div>
+        <div class="your-score">-</div>
+        <div class="best-score">-</div>
+        <button class="play-again">Play Again?</button>
+    </div>
+
+    <div class="lose-section">
+        <div class="lose-title">Unfortunately, you ran out of guesses</div>
+        <div class="lose-text"> Try playing again </div>
+        <div class="lose-was">My number was: <span class="secret-num-lose">-</span></div>
+        <button class="try-again">Try Again?</button>
+    </div>
+</div>
+
       <div class="history">
-        No. of guesses
-      </div>
-      <div class="number">
-        Guessed numbers are:  
+      <h4>  No. of guesses </h4>
+       <h4> Guessed numbers are:   </h4>
       </div>
     </div>
     
-    <script src="script.js"></script>
+    <script src="project3.js"></script>
     
   </body>
-</html>
